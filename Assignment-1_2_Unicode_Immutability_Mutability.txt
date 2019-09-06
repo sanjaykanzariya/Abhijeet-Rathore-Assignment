@@ -1,0 +1,22 @@
+Unicode:
+
+Unicode is the internationally accepted encoding system for encoding the characters in any programming language, operating systems, softwares, etc.
+The most commonly used format of Unicode are UTF-8, UTF-16.
+ASCII representation uses 128 code points for representation of most commonly used characters. UTF-8 directly maps the ASCII values as they are.
+
+Mutability & Immutability:
+
+There are two types of objects in python i.e. Mutable and Immutable objects. Whenever an object is instantiated, it is assigned a unique object id. The type of the object is defined at the runtime and it can’t be changed afterwards. However, it’s state can be changed if it is a mutable object. Mutable objects can change their state or contents and immutable objects can’t change their state or content.
+
+Immutable Objects : int, float, bool, string, unicode, tuple
+
+Mutable Objects : list, dict, set
+
+Mutable and immutable objects are handled differently in python. Immutable objects are quicker to access and are expensive to change because it involves the creation of a copy. Whereas mutable objects are easy to change. Use of mutable objects is recommended when there is a need to change the size or content of the object.
+Exception : However, there is an exception in immutability as well. We know that tuple in python is immutable. But the tuple consists of a sequence of names with unchangeable bindings to objects. Consider a tuple
+tup = ([3, 4, 5], 'myname') 
+The tuple consists of a string and a list. Strings are immutable so we can’t change its value. But the contents of the list can change. The tuple itself isn’t mutable but contain items that are mutable.
+
+Why it is important?:
+
+Sometimes we need to write the objects for which we dont want to change the content throughout the programming. Then we can use Immutable objects.
